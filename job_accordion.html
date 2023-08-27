@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Applicant side - Listing page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link rel="stylesheet" href="/css/accordion.css" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar bg-body-tertiary navbar bg-dark border-bottom border-body"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/assets/Walkin_Portal_Icons/Zeus-LMS-logo.svg"
+            alt="Logo"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <form class="d-flex" role="search">
+          <button class="btn btn-outline-success user-profile" type="submit">
+            U
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="cards-container">
+      <div class="card display-card">
+        <div class="card-header">
+          <h1 class="card-header-text">Walk In for Multiple Job Roles</h1>
+          <button class="btn btn-success apply-btn" type="button">APPLY</button>
+
+          <div class="card-details">
+            <p class="label-dt">Date & Time :</p>
+            <p class="dt">
+              03-Jul-2021 to 04-Jul-2021
+              <span class="location">
+                |
+                <img
+                  src="/assets/Walkin_Portal_Icons/location_on_black_24dp.svg"
+                  alt=""
+                />
+                Mumbai</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="label-job">Job Roles :</p>
+          <div class="multiple-roles">
+            <p>
+              <span class="job-role">
+                <img
+                  src="/assets/Walkin_Portal_Icons/Instructional Designer.svg"
+                  alt=""
+                />
+                Instructional Designer</span
+              >
+              |
+            </p>
+            <p>
+              <span class="job-role"
+                ><img
+                  width="22px"
+                  height="22px"
+                  src="/assets/Walkin_Portal_Icons/computer.svg"
+                  alt=""
+                />
+                Software Engineer</span
+              >
+              |
+            </p>
+            <p>
+              <span class="job-role"
+                ><img
+                  src="/assets/Walkin_Portal_Icons/Software Quality Engineer.svg"
+                  alt=""
+                />
+                Software Quality Engineer</span
+              >
+            </p>
+          </div>
+
+          <!-- accordion job pre rq-->
+          <div class="accordion pre-r" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header label-pre">
+                <button
+                  class="accordion-button"
+                  style="background-color: #dbefff"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                  onclick="toggleAccordion()"
+                >
+                  Pre-requisites & Application Process
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show">
+                <!-- <div class=""> -->
+                <div class="accordion-body Pre-requisites">
+                  <div class="card-header">
+                    <p class="label-dt">General Instructions :</p>
+                    <p>
+                      - We have a two–year indemnity for permanent candidates.
+                      We will provide training to the selected candidates.
+                    </p>
+                    <p>
+                      - Candidates who have appeared for any test held by Zeus
+                      Learning in the past 12 months will not be allowed to
+                      appear for this recruitment test.
+                    </p>
+                  </div>
+                  <div class="c-divider"></div>
+
+                  <div class="card-body">
+                    <p class="label-dt">Instructions for the Exam :</p>
+                    <p>
+                      - Candidates are requested to log in half an hour prior to
+                      the exam start time as they would need to capture their
+                      image using a web camera. By taking this test, you are
+                      permitting the examination system to capture your video
+                      for invigilation purposes.
+                    </p>
+                    <p>
+                      - Candidates would not be able to appear for the exam if
+                      the web camera attached to their system is not functional.
+                    </p>
+                    <p>
+                      - The web camera of your system must be enabled and must
+                      remain switched on throughout the examination. In the
+                      event of non-receipt of a webcam, your examination will be
+                      considered null and void.
+                    </p>
+                    <p>
+                      - Candidate’s audio and video will be recorded during the
+                      examination and will also be monitored by a live proctor.
+                      The proctor may terminate your exam in case he/she
+                      observes any malpractice during the exam.
+                    </p>
+                    <p>
+                      - Candidates are advised to use their own Laptop/PC with a
+                      stable internet connection (min 1 Mbps) during the exam.
+                    </p>
+                    <p>
+                      - Candidates cannot use an iOS system/device for this
+                      exam.
+                    </p>
+                  </div>
+                  <div class="c-divider"></div>
+
+                  <div class="card-body">
+                    <p class="label-dt">Minimum System Requirements :</p>
+                    <p>
+                      - Personal Laptop or Desktop computer in working condition
+                      with good quality camera (you can use Windows 7 and
+                      above).
+                    </p>
+                    <p>- The latest version of Google Chrome Browser only.</p>
+                    <p>
+                      - Please note that Internet speed should be minimum 1
+                      Mbps.
+                    </p>
+                    <p>
+                      - Do not use a MacBook or iPad for the proctored exam.
+                    </p>
+                  </div>
+                  <div class="c-divider"></div>
+                  <div class="card-body">
+                    <p class="label-dt">Process :</p>
+                    <p>
+                      - Every round is an elimination round. Candidates need to
+                      clear all rounds to get selected.
+                    </p>
+                    <br />
+                    <p>Round I : 4th August, 2018</p>
+                    <p>Aptitude Test : 25 Questions</p>
+                    <br />
+                    <p>Round II (Interview) : 4th August, 2018.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+      <!-- timeslot -->
+
+      <div class="card timeslot-card">
+        <div class="card-header">
+          <p class="dt" style="font-size: 16px">Time Slots & Preferences</p>
+          <p class="label-dt">Select a Time Slot :</p>
+          <!-- <div class="radio-icon">
+                    <label>
+
+                        <img src="assets/icons/radio-button-on.svg" />
+                        &nbsp; 9:00 AM to 11:00 AM
+                    </label>
+                    
+                    <label>
+                        <img src="assets/icons/radio-button-off.svg" />
+                        &nbsp;1:00 PM to 3:00 PM
+                    </label>
+                </div> -->
+          <div class="radio-btns">
+            <label class="custom-radio">
+              9:00 AM to 11:00 AM
+              <input type="radio" checked="checkmarked" name="notice-period" />
+              <span class="checkmarked"></span>
+            </label>
+            <label class="custom-radio"
+              >1:00 PM to 3:00 PM
+              <input type="radio" name="notice-period" />
+              <span class="checkmarked"></span>
+            </label>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="dt">Select Your Preference :</p>
+          <div class="preferences">
+            <!-- <label class="check-list">
+                        <img src="assets/icons/checkbox-checked.svg" />
+                        Instructional Designer
+                    </label>
+                    <label class="check-list">
+                        <img src="assets/icons/checkbox-unchecked.svg" />
+                        Software Engineer
+                    </label>
+                    <label class="check-list">
+                        <img src="assets/icons/checkbox-checked.svg" />
+                        Software Quality Engineer
+                    </label>
+                    <label style="color:rgb(119, 119, 119);;">Select All The Technologies You Expertise
+                        In*</label> -->
+
+            <label class="label-check"
+              >Instructional Designer
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="label-check"
+              >Software Engineer
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="label-check">
+              Software Quality Engineer
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="input-fields">
+            <div class="others">
+              <label style="color: rgb(119, 119, 119)"
+                >If others, please mention</label
+              >
+              <input type="text" name="others" placeholder="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card-footer" style="background-color: white">
+          <h3
+            class="card-header-text"
+            style="text-transform: uppercase; font-size: 16px"
+          >
+            <img
+              class="upload"
+              src="/assets/Walkin_Portal_Icons/Upload_black_24dp.svg"
+              alt=""
+            />
+            Upload Updated Resume
+          </h3>
+        </div>
+      </div>
+
+      <!-- job details -->
+      <div class="job-details">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Instructional Designer
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="job-desc">
+                  <div>
+                    <p class="label-pkg">gross compensation package :</p>
+                    <p class="ctc">Rs. 5,00,000 lpa</p>
+                  </div>
+
+                  <div class="c-divider"></div>
+                  <div>
+                    <p class="label-desc">Role Description :</p>
+
+                    <p class="ctc">
+                      - Generate highly interactive and innovative instructional
+                      strategies for e-learning solutions
+                    </p>
+                    <p class="ctc">
+                      - Develop course structure and learning specifications
+                      addressing the requirements of the target audience
+                    </p>
+                    <p class="ctc">
+                      - Construct appropriate testing strategies to ensure
+                      learners' understanding and performance
+                    </p>
+                    <p class="ctc">- Address usability issues</p>
+                    <p class="ctc">
+                      - Keep abreast of new trends in e-learning
+                    </p>
+                    <p class="ctc">
+                      - Ensure that the instructional strategies are as per
+                      global standards
+                    </p>
+                    <p class="ctc">
+                      - Prepare instructional design checklists and guidelines
+                    </p>
+                    <p class="ctc">- Check for quality assurance</p>
+                  </div>
+
+                  <div class="c-divider"></div>
+
+                  <div>
+                    <p class="label-desc">Requirements :</p>
+
+                    <p class="ctc">
+                      - Experience in creating instructional plans and course
+                      maps.
+                    </p>
+                    <p class="ctc">
+                      - Experience in the use of media like graphics,
+                      illustrations, photographs, audio, video, animations, and
+                      simulations in instruction
+                    </p>
+                    <p class="ctc">
+                      - Awareness of different instructional design models and
+                      familiarity with instructional and learning theories
+                    </p>
+                    <p class="ctc">
+                      - Awareness of latest trends in e-learning and
+                      instructional design
+                    </p>
+                    <p class="ctc">
+                      - Strong client consulting/interfacing skills.
+                    </p>
+                    <p class="ctc">
+                      - Ability to guide clients to focus on specific objectives
+                      and teaching points
+                    </p>
+                    <p class="ctc">
+                      - Strong meeting facilitation, presentation and
+                      interpersonal skills
+                    </p>
+                    <p class="ctc">
+                      - A thorough understanding of the web as an instructional
+                      medium
+                    </p>
+                    <p class="ctc">
+                      - Post graduate degree in Education, Instructional Design,
+                      Mass Communication or Journalism
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Software Engineer
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="job-desc">
+                  <div>
+                    <p class="label-pkg">gross compensation package :</p>
+                    <p class="ctc">Rs. 5,00,000 lpa</p>
+                  </div>
+
+                  <div class="c-divider"></div>
+                  <div>
+                    <p class="label-desc">Role Description :</p>
+
+                    <p class="ctc">
+                      - Generate highly interactive and innovative instructional
+                      strategies for e-learning solutions
+                    </p>
+                    <p class="ctc">
+                      - Develop course structure and learning specifications
+                      addressing the requirements of the target audience
+                    </p>
+                    <p class="ctc">
+                      - Construct appropriate testing strategies to ensure
+                      learners' understanding and performance
+                    </p>
+                    <p class="ctc">- Address usability issues</p>
+                    <p class="ctc">
+                      - Keep abreast of new trends in e-learning
+                    </p>
+                    <p class="ctc">
+                      - Ensure that the instructional strategies are as per
+                      global standards
+                    </p>
+                    <p class="ctc">
+                      - Prepare instructional design checklists and guidelines
+                    </p>
+                    <p class="ctc">- Check for quality assurance</p>
+                  </div>
+
+                  <div class="c-divider"></div>
+
+                  <div>
+                    <p class="label-desc">Requirements :</p>
+
+                    <p class="ctc">
+                      - Experience in creating instructional plans and course
+                      maps.
+                    </p>
+                    <p class="ctc">
+                      - Experience in the use of media like graphics,
+                      illustrations, photographs, audio, video, animations, and
+                      simulations in instruction
+                    </p>
+                    <p class="ctc">
+                      - Awareness of different instructional design models and
+                      familiarity with instructional and learning theories
+                    </p>
+                    <p class="ctc">
+                      - Awareness of latest trends in e-learning and
+                      instructional design
+                    </p>
+                    <p class="ctc">
+                      - Strong client consulting/interfacing skills.
+                    </p>
+                    <p class="ctc">
+                      - Ability to guide clients to focus on specific objectives
+                      and teaching points
+                    </p>
+                    <p class="ctc">
+                      - Strong meeting facilitation, presentation and
+                      interpersonal skills
+                    </p>
+                    <p class="ctc">
+                      - A thorough understanding of the web as an instructional
+                      medium
+                    </p>
+                    <p class="ctc">
+                      - Post graduate degree in Education, Instructional Design,
+                      Mass Communication or Journalism
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Software Quality Engineer
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="job-desc">
+                  <div>
+                    <p class="label-pkg">gross compensation package :</p>
+                    <p class="ctc">Rs. 5,00,000 lpa</p>
+                  </div>
+
+                  <div class="c-divider"></div>
+                  <div>
+                    <p class="label-desc">Role Description :</p>
+
+                    <p class="ctc">
+                      - Generate highly interactive and innovative instructional
+                      strategies for e-learning solutions
+                    </p>
+                    <p class="ctc">
+                      - Develop course structure and learning specifications
+                      addressing the requirements of the target audience
+                    </p>
+                    <p class="ctc">
+                      - Construct appropriate testing strategies to ensure
+                      learners' understanding and performance
+                    </p>
+                    <p class="ctc">- Address usability issues</p>
+                    <p class="ctc">
+                      - Keep abreast of new trends in e-learning
+                    </p>
+                    <p class="ctc">
+                      - Ensure that the instructional strategies are as per
+                      global standards
+                    </p>
+                    <p class="ctc">
+                      - Prepare instructional design checklists and guidelines
+                    </p>
+                    <p class="ctc">- Check for quality assurance</p>
+                  </div>
+
+                  <div class="c-divider"></div>
+
+                  <div>
+                    <p class="label-desc">Requirements :</p>
+
+                    <p class="ctc">
+                      - Experience in creating instructional plans and course
+                      maps.
+                    </p>
+                    <p class="ctc">
+                      - Experience in the use of media like graphics,
+                      illustrations, photographs, audio, video, animations, and
+                      simulations in instruction
+                    </p>
+                    <p class="ctc">
+                      - Awareness of different instructional design models and
+                      familiarity with instructional and learning theories
+                    </p>
+                    <p class="ctc">
+                      - Awareness of latest trends in e-learning and
+                      instructional design
+                    </p>
+                    <p class="ctc">
+                      - Strong client consulting/interfacing skills.
+                    </p>
+                    <p class="ctc">
+                      - Ability to guide clients to focus on specific objectives
+                      and teaching points
+                    </p>
+                    <p class="ctc">
+                      - Strong meeting facilitation, presentation and
+                      interpersonal skills
+                    </p>
+                    <p class="ctc">
+                      - A thorough understanding of the web as an instructional
+                      medium
+                    </p>
+                    <p class="ctc">
+                      - Post graduate degree in Education, Instructional Design,
+                      Mass Communication or Journalism
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    function toggleAccordion() {
+      const accordionContent = document.querySelector(".accordion-body");
+      const timeslot = document.querySelector(".timeslot-card");
+      const job = document.querySelector(".job-details");
+
+      if (accordionContent.style.display === "none") {
+        accordionContent.style.display = "block";
+        timeslot.style.transform = "translateY(1300px)";
+        job.style.transform = "translateY(1300px)";
+      } else {
+        accordionContent.style.display = "none";
+        timeslot.style.transform = "translateY(0)";
+        job.style.transform = "translateY(0)";
+      }
+    }
+  </script>
+</html>

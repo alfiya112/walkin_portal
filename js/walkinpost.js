@@ -1,7 +1,7 @@
 var User = Backbone.Model.extend({
-   
+
     url:
-        'http://localhost/user-walkin-registration'
+        'http://localhost/walkin-post'
 
 
 })
