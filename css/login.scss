@@ -1,0 +1,123 @@
+$color_1: #333;
+$color_2: #287742;
+$color_3: #000000;
+$color_4: #1f6637;
+$font-family_1: quicksand;
+$background-color_1: rgb(221, 217, 217);
+$background-color_2: #fff;
+$background-color_3: transparent;
+$background-color_4: #68db8e;
+
+body {
+	background-color: $background-color_1;
+	font-family: $font-family_1;
+}
+main {
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+.title {
+	display: flex;
+	padding-left: 12px;
+	h2 {
+		margin-bottom: 20px;
+		justify-content: center;
+	}
+}
+.login-card {
+	background-color: $background-color_2;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	padding: 20px;
+	width: 70%;
+	border-top: 5px solid rgb(100, 197, 235);
+}
+.radio-icon {
+	label {
+		padding: 12px;
+		display: flex;
+		align-items: center;
+	}
+	display: flex;
+}
+.dropdowns {
+	margin-bottom: 15px;
+	padding: 20px;
+	label {
+		padding-left: 0px;
+		padding-bottom: 20px;
+	}
+}
+.custom-select {
+	display: flex;
+	border-bottom: 1px solid #ccc;
+	select {
+		appearance: none;
+		background-color: $background-color_3;
+		border: none;
+		padding: 10px 25px 5px 0px;
+		font-size: 16px;
+		width: 100%;
+		color: $color_1;
+	}
+}
+.input-fields {
+	padding: 0 20px 20px 20px;
+	input {
+		width: 100%;
+		padding: 5px;
+		border: none;
+		background-color: $background-color_2;
+	}
+}
+.username {
+	border-bottom: 1px solid #ccc;
+}
+.pre {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+}
+.forget {
+	float: right;
+	color: $color_2;
+	font-weight: 550;
+}
+input {
+	&::placeholder {
+		padding-left: -1px;
+		font-size: 1.2em;
+		font-weight: 500;
+	}
+}
+.remember-me {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+	padding: 20px;
+	font-weight: 500;
+	input {
+		margin-right: 8px;
+	}
+}
+button {
+	text-align: center;
+	font-weight: 500;
+	width: 30%;
+	padding: 10px;
+	background-color: $background-color_4;
+	color: $color_3;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.navigate {
+	margin-top: 0px;
+	margin-bottom: 60px;
+	display: flex;
+	justify-content: center;
+	color: $color_4;
+	font-weight: 500;
+}

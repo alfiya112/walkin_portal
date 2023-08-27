@@ -1,0 +1,300 @@
+/* @font-face {
+  font-family: Quicksand;
+  src: url('../assets/font/Quicksand-VariableFont_wght.ttf') format("truetype-variations");
+  font-style: normal;
+  font-weight: 300 800;
+} */
+@font-face {
+  src: url("../Quicksand-VariableFont_wght.ttf");
+  font-family: Quicksand;
+}
+/* body, html {
+box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+font-family: Quicksand, "Helvetica Neue";
+ } */
+body {
+  background-color: #EEEEEE;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Quicksand;
+}
+
+.nav {
+  background-color: #25313F;
+  padding: 10px 40px;
+  border-bottom: 2px solid #31B9E4;
+}
+
+/************************************************************************************************************************************************/
+.starter {
+  background: #3C4E62;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.back {
+  width: 30px;
+  cursor: pointer;
+}
+
+.upload {
+  filter: invert(44%) sepia(94%) saturate(1028%) hue-rotate(95deg) brightness(104%) contrast(101%);
+}
+
+.head {
+  color: #fff;
+  font-size: medium;
+  font-family: Quicksand-SemiBold;
+}
+
+.button {
+  display: flex;
+  gap: 10px;
+}
+
+/* Style for all the 3 green buttons in the page */
+.btn {
+  background-color: #3FD28B;
+  font-family: Quicksand-SemiBold;
+  margin: 0;
+  padding: 10px 30px;
+  border-radius: 4px;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+
+.disabled {
+  filter: opacity(0.7);
+}
+
+@media screen and (max-width: 500px) {
+  .btn {
+    width: 60px;
+    font-size: small;
+  }
+  .head {
+    font-size: small;
+  }
+}
+@media screen and (min-width: 700px) {
+  .head-div {
+    position: relative;
+    right: -5%;
+  }
+}
+/************************************************************************************************************************************************/
+.taskbar {
+  margin: 24px;
+  background-color: #FFFFFF;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* round circle for numbers in taskbar */
+.round1 {
+  background-color: #757575;
+  color: #FFFFFF;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  padding-top: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.task1 {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.active {
+  background-color: #3FD28B; /* Active color */
+  color: #333333;
+}
+
+.round-text {
+  font-family: Quicksand-SemiBold;
+  margin-left: 10px;
+  font-size: large;
+}
+
+.line {
+  width: 24%;
+  background-color: #EFEFEF;
+  border: 1px solid rgba(117, 117, 117, 0.4);
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 750px) {
+  .taskbar {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+/************************************************************************************************************************************************/
+.main {
+  background-color: #EEEEEE;
+  /* min-height: calc( 100vh - 101px ); */
+  padding-top: 4px;
+}
+
+.form1 {
+  /* min-height: calc( 100vh - 210px ); */
+  margin: 0px 24px;
+}
+
+.inputs {
+  background-color: #FFFFFF;
+  /* min-height: calc( 100vh - 200px ); */
+  display: grid;
+  grid-template-areas: "inp upload";
+  padding: 24px;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-child {
+  flex: 1;
+}
+
+.form-input {
+  min-height: 500px;
+  width: 70%;
+  grid-area: inp;
+}
+
+.form-profile {
+  grid-area: upload;
+  min-height: 500px;
+  margin-right: 5%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.profile-pic {
+  height: 150px;
+}
+
+.phone-tag {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: #CECECE;
+  text-decoration-thickness: 2px;
+}
+
+.profile-image {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  /* margin-right: 20px; */
+}
+
+.upload-text {
+  color: #3FD28B;
+  cursor: pointer;
+  font-family: Quicksand-SemiBold;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.pic-msg {
+  color: #B6B6B6;
+  font-family: Quicksand-SemiBold;
+  font-size: small;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 2px solid #CECECE;
+  width: 100%;
+}
+
+.form-label {
+  color: #747474;
+  font-family: Quicksand-SemiBold;
+}
+
+.inp-phone {
+  margin-left: 5px;
+  width: 150px;
+}
+
+.resume {
+  display: flex;
+  align-items: center;
+}
+
+.upload {
+  height: 25px;
+  color: #197f54;
+}
+
+.resume-text {
+  color: #197f54;
+  margin-left: 4px;
+  font-size: 14px;
+  font-family: QuickSand-Regular;
+  cursor: pointer;
+}
+
+.check {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.ver-align {
+  display: flex;
+  align-items: center;
+}
+
+.check-btn {
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+  accent-color: #197f54;
+  cursor: pointer;
+}
+
+.remember {
+  font-family: Quicksand-SemiBold;
+  margin-top: 2px;
+}
+
+.mb-4 {
+  margin-bottom: 20px;
+}
+
+.mb-5 {
+  margin-bottom: 40px;
+}
+
+.btn-bottom {
+  margin: 40px 0;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}/*# sourceMappingURL=register.css.map */

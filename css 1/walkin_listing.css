@@ -1,0 +1,227 @@
+@font-face {
+  font-family: quicksand;
+  src: url(Quicksand-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #EEEEEE;
+}
+
+.user-profile {
+  background: #3c4e62 0% 0% no-repeat padding-box;
+  border: 2px solid #3fd28b;
+  border-radius: 54px;
+  margin-right: 10px;
+  color: white;
+}
+
+nav {
+  border-bottom: 4px solid rgb(29, 157, 231);
+}
+
+.list-of-cards {
+  margin-top: 39px;
+}
+
+.display-card {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2392156863);
+  opacity: 1;
+  margin: 24px;
+  border-radius: 2px;
+}
+
+.card-header-text {
+  font-size: 20px;
+  letter-spacing: 0px;
+  color: #1f7a54;
+  opacity: 1;
+  background-color: white;
+}
+
+.multiple-roles {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  flex-direction: row;
+}
+.multiple-roles .job-role {
+  margin: 0px 9px;
+}
+
+.card-header {
+  background-color: white;
+}
+
+.dt {
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+  font-size: 18;
+  font-weight: bold;
+}
+
+.job-role {
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+  font-size: 18;
+}
+.job-role img {
+  border: 1px solid #222222;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.label-dt {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: #666666;
+  opacity: 1;
+  margin-top: 15px;
+}
+
+.label-job {
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #666666;
+  opacity: 1;
+}
+
+.location {
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #666666;
+  opacity: 1;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.location img {
+  color: #666666;
+  opacity: 0.7;
+  margin-left: 10px;
+}
+
+.details-btn {
+  background-color: #3fd28b;
+  color: black;
+  margin-top: 5px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2392156863);
+  border-radius: 2px;
+  opacity: 1;
+  border: none;
+  font-size: 18;
+}
+
+.expiry-badge {
+  background-color: #ffe4e6;
+  color: #d10107;
+  position: absolute;
+  top: 90px;
+  right: 71px;
+  z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+  .expiry-badge {
+    background-color: #ffe4e6;
+    color: #d10107;
+    position: absolute;
+    top: 90px;
+    right: 71px;
+    z-index: 10;
+  }
+  .display-card {
+    width: 719px;
+    height: 320px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2392156863);
+    opacity: 1;
+    margin: 24px;
+    border-radius: 2px;
+    box-sizing: content-box;
+  }
+  .card-header-text {
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #1f7a54;
+    opacity: 1;
+    background-color: white;
+  }
+  .card-header {
+    background-color: white;
+  }
+  .dt {
+    letter-spacing: 0px;
+    color: #222222;
+    opacity: 1;
+    font-size: 18;
+    font-weight: bold;
+  }
+  .job-role {
+    letter-spacing: 0px;
+    color: #222222;
+    opacity: 1;
+    font-size: 18;
+  }
+  .job-role img {
+    border: 1px solid #222222;
+    border-radius: 10px;
+    padding: 3px;
+  }
+  .label-dt {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #666666;
+    opacity: 1;
+    margin-top: 15px;
+  }
+  .label-job {
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #666666;
+    opacity: 1;
+  }
+  .location {
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #666666;
+    opacity: 1;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  .location img {
+    color: #666666;
+    opacity: 0.7;
+    margin-left: 10px;
+  }
+  .details-btn {
+    background-color: #3fd28b;
+    color: black;
+    margin-top: 5px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2392156863);
+    border-radius: 2px;
+    opacity: 1;
+    font-size: 18;
+    position: absolute;
+    top: 257px;
+    right: 269px;
+    z-index: 10;
+    border: none;
+  }
+  .multiple-roles {
+    display: flex;
+    flex-direction: row;
+  }
+  .multiple-roles .job-role {
+    margin: 0px 9px;
+  }
+}/*# sourceMappingURL=walkin_listing.css.map */

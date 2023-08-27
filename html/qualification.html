@@ -1,0 +1,359 @@
+<!DOCTYPE html>css
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Qualification</title>
+    <link rel="stylesheet" href="../css/qualification.css">
+</head>
+<body>
+    
+    <nav class="nav">
+        <img class="nav-img" src="../Walkin_Portal_Icons/Zeus-LMS-logo.svg" alt="">
+    </nav>
+
+    <div class="starter">
+        <div class="back-div">
+            <a><img class="back" src="../assets1/quantum screen assets/icons/back.svg" alt=""></a>
+        </div>
+        <div class="head-div">
+            <h5 class="head">Create An Account</h5>
+        </div>
+        <div class="button">
+            <button type="button" class="btn">Cancel</button>
+            <button type="button" class="btn disabled">Create</button>
+        </div>
+    </div>
+
+
+    <div class="taskbar">
+        <div class="task1">
+            <div class="round1 active">1</div>
+            <p class="round-text">Personal Information</p>
+        </div>
+        <div class="line"></div>
+        <div class="task1">
+            <div class="round1 active">2</div>
+            <p class="round-text">Qualifications</p>
+        </div>
+        <div class="line"></div>
+        <div class="task1">
+            <div class="round1">3</div>
+            <p class="round-text">Review and Proceed</p>
+        </div>
+    </div>
+
+     <div class="qualification">
+        <div class="qualification-header">
+           <h6 class="education-title">Educational Qualifications</h6>
+           <div class="vertical-line"></div>
+           <img class="expand" src="../assets1/quantum screen assets/icons/expand-less.svg" alt=""> 
+        </div>
+        <form >
+            <div class="qualification-detail">
+                <div class="first-details">
+                    <div class="left-content">
+                        <div class="half-content">
+                            <div class="half1">
+                                <div class="mb-5">
+                                    <label for="percentage" class="form-label mb-4">Aggregate Percentage*</label>
+                                    <input type="text" class="form-control" id="percentage" name="percentage" formControlName="percentage">  
+                                </div>
+                                <div class="mb-5">
+                                    <label for="passYear" class="form-label mb-4">Passing Year*</label>
+                                    <select name="passYear" id="passYear" class="form-control">
+                                        <option disabled selected>Passing Year</option>
+                                        <option>2024</option>
+                                        <option>2023</option>
+                                        <option>2022</option>
+                                        <option>2021</option>
+                                    </select>  
+                                </div>
+                            </div> 
+                            <div class="half2"></div> 
+                        </div>
+                        
+                    </div>
+                    <div class="right-content"></div>
+                </div>
+                 <div class="education2">
+                    <div class="left-side">
+                        <div class="mb-5">
+                            <label for="qualification" class="form-label mb-4">Qualification*</label>
+                            <select name="qualification" id="qualification" class="form-control" >
+                                <option disabled selected>Select Qualification</option>
+                                <option>B.Engg</option>
+                                <option>B.Tech</option>
+                                <option>M.Engg</option>
+                                <option>M.Tech</option>
+                            </select>  
+                        </div>
+                        
+                    </div>
+                    <div class="right-side">
+                        <div class="mb-5">
+                            <label for="stream" class="form-label mb-4">Stream*</label>
+                            <select name="stream" id="stream" class="form-control" >
+                                <option disabled selected>Select Stream</option>
+                                <option>Computer Engineering</option>
+                                <option>Information Technology</option>
+                                <option>Electronics Engineering</option>
+                            </select>  
+                        </div>
+                    </div>
+                </div>
+                <div class="education2">
+                    <div class="left-side">
+                        <div class="mb-5">
+                            <label for="college" class="form-label mb-4">College*</label>
+                            <select name="college" id="college" class="form-control" >
+                                <option disabled selected>Select College</option>
+                                <option>IIT Bombay</option>
+                                <option>IIT Madras</option>
+                                <option>IIT Delhi</option>
+                            </select>  
+                        </div>
+                        
+                    </div>
+                    <div class="right-side">
+                        <div class="mb-5">
+                            <label for="otherclg" class="form-label mb-4">If others, please enter your college name</label>
+                            <input type="text" class="form-control" id="otherclg" name="otherclg" >
+                        </div>
+                    </div>
+                </div>
+                <div class="first-details">
+                    <div class="left-content">
+                        <div class="half-content">
+                            <div class="half1">
+                                <div class="mb-5">
+                                    <label for="clglocation" class="form-label mb-4">Where is your College Located?*</label>
+                                    <input type="text" class="form-control" id="clglocation" name="clglocation">  
+                                </div>
+                            </div> 
+                            <div class="half2"></div> 
+                        </div>
+                    </div>
+                    <div class="right-content"></div>
+                </div> 
+            </div>
+            
+        </form>   
+    </div>
+    <div class="qualification">
+        <div class="qualification-header">
+           <h6 class="education-title">Professional Qualifications</h6>
+           <div class="vertical-line"></div>
+           <img class="expand" src="../assets1/quantum screen assets/icons/expand-less.svg" alt=""> 
+        </div>
+        <form>
+            <div class="qualification-detail">
+                <label for="experienceType" class="form-label mb-4">Applicant Type*</label>
+                <div class="radio-container">
+                    <div class="form-check ver-align">
+                        <input type="radio" id="fresher" name="exp" value="Fresher" class="form-check-input radio-btn">
+                        <label for="fresher" class="form-check-label">Fresher</label>
+                    </div>
+                    <div class="form-check ver-align">
+                        <input type="radio" id="experienced" name="exp" value="Experienced" class="form-check-input radio-btn">
+                        <label for="experienced" class="form-check-label">Experienced</label>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="qualification">
+        <form >
+            <div class="qualification-detail">
+                <div  class="first-details">
+                    <div class="left-content">
+                        <div class="half-content">
+                            <div class="half1">
+                                <div class="mb-5">
+                                    <label for="expYears" class="form-label mb-4">Years of Experience*</label>
+                                    <input type="text" class="form-control" id="expYears" name="expYears" formControlName="expYears">  
+                                </div>
+                                <div class="mb-5">
+                                    <label for="currentCTC" class="form-label mb-4">Current CTC* (In Rupees)</label>
+                                    <input type="text" class="form-control" id="currentCTC" name="currentCTC" formControlName="currentCTC">  
+                                </div>
+                                <div class="mb-5">
+                                    <label for="expectedCTC" class="form-label mb-4">Expected CTC* (In Rupees)</label>
+                                    <input type="text" class="form-control" id="expectedCTC" name="expectedCTC" formControlName="expectedCTC">  
+                                </div>
+                                
+                            </div> 
+                            <div class="half2"></div> 
+                        </div>
+                    </div>
+                    <div class="right-content"></div>
+                </div>
+                
+                <div class="education2">
+                    <div class="left-side">
+                        <div class="mb-5">
+                            <label for="preferredRole" class="form-label mb-4">Select All The Technologies You Expertise In*</label>
+                            <div class="check" >
+                                <div class="ver-align">
+                                    <input class="check-btn" type="checkbox">
+                                    <label class="remember"> Javascript</label> 
+                                </div>
+                                <div class="ver-align">
+                                    <input class="check-btn" type="checkbox">
+                                    <label class="remember"> Angular JS</label>  <br>
+                                </div>
+                                <div class="ver-align">
+                                    <input class="check-btn" type="checkbox">
+                                    <label class="remember"> React</label>
+                                </div>
+                                <div class="ver-align">
+                                    <input class="check-btn" type="checkbox">
+                                    <label class="remember"> Node JS</label>
+                                </div>
+                                <div class="ver-align">
+                                    <input class="check-btn" type="checkbox">
+                                    <label class="remember"> Others</label>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="left-side">
+                        <div class="mb-5 limit">
+                            <label for="otherExpertiseTech" class="form-label mb-4">If others, please mention</label>
+                            <input type="text" class="form-control" id="otherExpertiseTech" name="otherExpertiseTech" >  
+                        </div>
+                    </div>
+                    <div class="right-side"></div>
+                </div>
+
+                <div class="education2">
+                    <div class="left-side">
+                        <div class="mb-5">
+                            <label for="preferredRole" class="form-label mb-4">Select All The Technologies You Are Familiar In</label>
+                            <div class="check" >
+                                <div class="ver-align">
+                                    <input class="check-btn" type="checkbox">
+                                    <label class="remember"> Javascript</label> 
+                                </div>
+                                <div class="ver-align">
+                                    <input class="check-btn" type="checkbox">
+                                    <label class="remember"> Angular JS</label>  <br>
+                                </div>
+                                <div class="ver-align">
+                                    <input class="check-btn" type="checkbox">
+                                    <label class="remember"> React</label>
+                                </div>
+                                <div class="ver-align">
+                                    <input class="check-btn" type="checkbox">
+                                    <label class="remember"> Node JS</label>
+                                </div>
+                                <div class="ver-align">
+                                    <input class="check-btn" type="checkbox">
+                                    <label class="remember"> Others</label>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="education2">
+                    <div class="left-side">
+                        <div class="mb-5">
+                            <label for="otherFamilarTech" class="form-label mb-4">If others, please mention</label>
+                            <input type="text" class="form-control" id="otherFamilarTech" name="otherFamilarTech">  
+                        </div>
+                    </div>
+                    <div class="right-side"></div>
+                </div>
+
+                <div id="conditional" class="hidden">
+                    <div class="education2 mb-5">
+                        <div class="left-side">
+                            <label for="isNoticePeriod" class="form-label mb-4">Are you currently on notice period?*</label>
+                            <div class="radio-container">
+                                <div class="form-check ver-align">
+                                    <input type="radio" id="yes" value="Yes" class="form-check-input radio-btn" name="notice-period">
+                                    <label for="isNoticePeriod" class="form-check-label">Yes</label>
+                                </div>
+                                <div class="form-check ver-align">
+                                    <input type="radio" id="no" value="No" class="form-check-input radio-btn" name="notice-period">
+                                    <label for="isNoticePeriod" class="form-check-label">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-side"></div>
+                    </div>
+
+                    <div  class="education2">
+                        <div class="left-side">
+                              <div class="mb-5">
+                                <label for="selectNoticeDate" class="form-label mb-4" >If Yes, when will your notice period end?*</label>
+                                <input type="date" class="form-control" id="datePicker" name="selectNoticeDate"> 
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <div class="mb-5">
+                                <label for="noticeMonth" class="form-label mb-4">How long is your notice period?* (Mention in months)</label>
+                                <select name="noticeMonth" id="noticeMonth" class="form-control" >
+                                    <option disabled selected>Select Month</option>
+                                    <option disabled selected>1 Month</option>
+                                    <option disabled selected>2 Months</option>
+                                    <option disabled selected>3 Months</option>
+                                </select>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education2 mb-5">
+                    <div class="left-side">
+                        <label for="isAppeared" class="form-label mb-4">Have You Appeared For Any Test By Zeus in the past 12 months?*</label>
+                        <div class="radio-container">
+                            <div class="form-check ver-align">
+                                <input type="radio" id="yes" name="appeared"  class="form-check-input radio-btn">
+                                <label for="isAppeared" class="form-check-label">Yes</label>
+                            </div>
+                            <div class="form-check ver-align">
+                                <input type="radio" id="no" name="appeared" class="form-check-input radio-btn">
+                                <label for="isAppeared" class="form-check-label">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-side"></div>
+                </div>
+
+                <div   class="education2">
+                    <div class="left-side">
+                        <div class="mb-5">
+                            <label for="previousAppliedRole" class="form-label mb-4">If Yes, which role did you apply for?</label>
+                            <input type="text" class="form-control">  
+                        </div>
+                    </div>
+                    <div class="right-side"></div>
+                </div>
+                
+
+            </div>
+        </form>
+    </div>
+    
+
+    <div class="button-container">
+        <button type="button"  class="btn shadow">Previous</button>
+        <button type="button"  class="btn shadow">Next</button>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="../js/qualification.js"></script>
+</body>
+</html>
