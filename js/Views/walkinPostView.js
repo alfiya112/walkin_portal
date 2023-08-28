@@ -1,14 +1,15 @@
 
 var walkinPostsView = Backbone.View.extend({
-    initialize: function () {
-        url: "http://localhost/walkin-post"
-    },
-    render: function () {
+  initialize: function () {
+    // url: "http://localhost/walkin-post"
+    // this.setElement($('.list-of-cards')); 
+  },
+  render: function () {
         if (this.$el) {
           const renderTemplate = this.template();
           this.$el.html(renderTemplate);
         } else {
-          console.error("Error: $el is undefined.");
+          console.log(this.$el);
         }
       },
     template: _.template(
@@ -43,6 +44,7 @@ var walkinPostsView = Backbone.View.extend({
           `
     ),
   });
+
 
 
   window.walkinPostsView = walkinPostsView;
