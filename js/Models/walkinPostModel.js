@@ -10,7 +10,7 @@ walkinpost.fetch({
         
         var walkinview = new walkinPostsView({
           el: ".list-of-cards",
-          model: this.myData,
+          model:walkinpost,
         });
         console.log(walkinview)
         walkinview.render();
