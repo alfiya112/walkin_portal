@@ -13,7 +13,7 @@ var walkinPostsView = Backbone.View.extend({
         }
       },
     template: _.template(
-        `<% _.each(this.collection,function(list){ %>
+        `<% _.each(this.model,function(list){ %>
             <div class="card display-card" >
             <% if(list['expire']!=null)
             {%>
