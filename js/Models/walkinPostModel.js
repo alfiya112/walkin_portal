@@ -8,5 +8,7 @@ var com.walkin.model.walkinPostsModel  = Backbone.Model.extend({
 });
 
 
+
+
+
 window.walkinPostsModel = walkinPostsModel;
-window.walkinpost = walkinpost;

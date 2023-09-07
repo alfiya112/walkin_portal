@@ -25,6 +25,7 @@ var com.walkin.view.walkinPostsView = Backbone.View.extend({
   }
   
     
+
   });
 
 
