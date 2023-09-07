@@ -1,0 +1,1 @@
+var posts = new com.walkin.view.walkinPostsView()

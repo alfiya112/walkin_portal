@@ -28,7 +28,7 @@
         </div>
     </nav>
 
-    <div class="list-of-cards">
+    <div class="list-of-cards" id="list-of-cards">
         </div>
     <!-- <div class="list-of-cards">
         <span class="badge  expiry-badge">Expires in 5 days</span>
@@ -108,6 +108,38 @@
             </div>
         </div>
     </div> -->
+    <script type="text/html" id="post-template">
+        <%for(var i=0; i<=data.length() ; i++){ %>
+            <div class="card display-card" >
+            <% if(data['expire']!=null)
+            {%>
+                <span class="badge  expiry-badge">Expires in <%= data['expiry'] %> days</span>
+            <%}%>
+            <div class="card-header">
+            <h1 class="card-header-text" "<%= data['title'] %>"></h1>
+                <div class="card-details">
+                    <p class="label-dt">Date & Time :</p>
+                    <p class="dt"> <%= data['datetime']%> <span class="location"> | <img
+                                src="/assets/Walkin_Portal_Icons/location_on_black_24dp.svg" alt=""> <%= data['location']%></span></p>
+
+                </div>
+            </div>
+            
+            
+            <div class="card-body">
+            <p class="label-job">Job Roles :</p>
+            <p><span class="job-role"><img src="/assets/Walkin_Portal_Icons/Instructional Designer.svg" alt="">
+                    Instructional Designer</span></p>
+
+            <div class="d-grid gap-2 col-md-4 col-lg-2 mx-auto">
+                <button class="btn btn-success details-btn" type="button">VIEW MORE DETAILS</button>
+            </div>
+
+        </div>
+        <% };%>
+          
+
+    </script>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
@@ -123,4 +155,5 @@
     <script src="js/Collections/walkinPost.js"></script>
     <script src="js/Models/walkinPostModel.js"></script>
     <script src="js/Views/walkinPostView.js"></script>
+    <script src="js/app.js"></script>
 </html>

@@ -14,11 +14,11 @@ $background-color_5: #3FD28B;
   font-weight: 300 800;
 } */
 @font-face {
-	src: url("../Quicksand-Bold.ttf");
+	src: url("../assets/font/Quicksand-Bold.ttf");
 	font-family: Quicksand-Bold;
 }
 @font-face {
-	src: url("../Quicksand-Bold.ttf-Light.ttf");
+	src: url("../assets/font/Quicksand-Bold.ttf-Light.ttf");
 	font-family: Quicksand-Light;
 }
 @font-face {
@@ -26,11 +26,11 @@ $background-color_5: #3FD28B;
 	font-family: Quicksand-Medium;
 }
 @font-face {
-	src: url("../Quicksand-Bold.ttf-Regular.ttf");
+	src: url("../assets/font/Quicksand-Bold.ttf-Regular.ttf");
 	font-family: Quicksand-Regular;
 }
 @font-face {
-	src: url("../Quicksand-Bold.ttf-SemiBold.ttf");
+	src: url("../assets/font/Quicksand-Bold.ttf-SemiBold.ttf");
 	font-family: Quicksand-SemiBold;
 }
 /************************************************************************************************************************************************/
@@ -60,6 +60,7 @@ html {
 }
 .nav-img-2 {
 	width: 5%;
+	filter: invert(44%) sepia(94%) saturate(1028%) hue-rotate(95deg) brightness(104%) contrast(101%)
 }
 .mb-4 {
 	margin-bottom: 10px;

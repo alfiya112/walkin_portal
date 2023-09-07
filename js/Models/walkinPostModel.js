@@ -1,21 +1,12 @@
-var walkinPostsModel = Backbone.Model.extend({
-    url: "http://localhost/walkin-post"
+var com= com || {};
+var com.walkin = com.walkin || {};
+var com.walkin.model  = com.walkin.model || {};
 
-});
-var walkinpost = new window.walkinPostsModel();
-walkinpost.fetch({
-    success: function (model, response) {
-        this.myData = response;
-        const data=this.myData;
-        
-        var walkinview = new walkinPostsView({
-          el: ".list-of-cards",
-          model: this.myData,
-        });
-        console.log(walkinview)
-        walkinview.render();
-    },
+var com.walkin.model.walkinPostsModel  = Backbone.Model.extend({
+    // url: "http://localhost/walkin-post"
+
 });
 
 
 window.walkinPostsModel = walkinPostsModel;
+window.walkinpost = walkinpost;
