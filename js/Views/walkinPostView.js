@@ -20,7 +20,7 @@ var com.walkin.view.walkinPostsView = Backbone.View.extend({
     var template = _.template($("#post-template").html())
     var output = self.template({'data':self.posts.toJSON});
     self.$el.append(output);
-    returnself;
+    return self;
    }
   }
   
